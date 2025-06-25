@@ -5,61 +5,164 @@
   <title>Home - ApexMinds Education Center</title>
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body {
+   body {
       margin: 0;
+      padding: 0;
       font-family: 'Quicksand', sans-serif;
       background: #f8fff8;
       color: #333;
     }
+
+    .section1 {
+      height: 200vh; /* full screen height */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: auto;
+    }
+
+    .section2 {
+      height: 150vh; /* full screen height */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin: auto;
+    }
+
+    .section1 {
+      background-image: url('Sky.jpg');
+      margin: auto;
+    }
+
+    .section2 {
+      background-image: url('background2.jpg');
+      margin: auto;
+    }
+
     header {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: #e0f2e9;
+      background: #0D2231;
       padding: 20px;
     }
+
     header h1 {
       margin: 0;
-      font-size: 2em;
-      color: darkgreen;
+      font-size: 1.5em;
+      color: Lightgreen;
     }
+
     nav a {
       margin: 0 10px;
       text-decoration: none;
-      color: #2e8b57;
+      color: lightyellow;
       font-weight: 600;
     }
+
     section {
       padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
     }
+
     section h2 {
       color: #2e8b57;
     }
-    footer {
-      text-align: center;
+
+   .content {
+     max-width: 1000px;
+     margin: auto;
+     padding: 30px;
+     background-color: rgba(255, 255, 255, 0.8); /* Optional: for readability */
+     border-radius: 10px; /* Optional: soft rounded edges */
+   }
+
+   .container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      max-width: 1000px;
+      margin: 40px auto;
       padding: 20px;
+      background-color: rgba(255, 255, 255, 0.8); /* optional */
+      border-radius: 10px; /* optional */
+   }
+
+    .container img {
+      display: flex;
+      width: 200px;
+      height: auto;
+      border-radius: 10px; /* optional */
+    }
+
+   .logo-img {
+      display: flex;
+      width: 80px;
+     height: auto;
+    }
+
+   .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+   .highlight {
+      font-size: 1.3em;       /* increase size */
+      color: #ff6600;         /* or any color you like */
+      font-weight: bold;      /* optional: make it stand out */
+    }
+
+   .text h3 {
+      margin: 0;
+      padding: 0;
+      font-size: 2.3em;       /* increase size */
+      display: inline-block; /* Make the text inline so that it's on the same line as the image */
+      margin-right: 100px; /* Adjust the space between text and image */
+      margin-left: 10px; /* Adjust the space between text and image */
+    }
+
+    footer {
+      text-align: left;
+      padding: 5px;
       background: #ffe4e1;
       margin-top: 40px;
     }
-  </style>
+
+</style>
+
+<!--  ---------------------------------------------------------------------------------------------------------------  -->
+
 </head>
 <body>
   <header>
+
+  <div class="logo-title">
+    <img src="logo.png" alt="logo" class="logo-img">
     <h1>ApexMinds Education Center</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-      <a href="gallery.html">Gallery</a>
-    </nav>
+  </div>
+
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="program.html">Our Programmes</a>
+    <a href="testimonial.html">Our Testimonials</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="faq.html">FAQs</a>
+  </nav>
   </header>
 
-  <section>
-    <h2>Home</h2>
-    <p>Every child is born with limitless potential, and the first six years are the most critical for brain development. At ApexMinds, we combine cutting-edge AI-powered Brain-Computer Interface (BCI) technology with proven whole-brain development methods to nurture your child’s cognitive, emotional, and creative growth.</p>
+<!--  ---------------------------------------------------------------------------------------------------------------  -->
+
+  <div class="section1">
+    <div class="content">
+    <div class="text">
+      <h3>Home</h3>
+    </div> 
+    <p>Every child is born with limitless potential, and from <span class="highlight"> 1 to 6 age </span> are the most critical for brain development. At ApexMinds, we combine cutting-edge AI-powered Brain-Computer Interface (BCI) technology with proven whole-brain development methods to nurture your child’s cognitive, emotional, and creative growth.</p>
 
     <h3>Why Whole-Brain Development?</h3>
     <ul>
@@ -68,20 +171,85 @@
       <li>✔ Emotional & Social Intelligence – Building confidence and empathy.</li>
     </ul>
 
-    <h3>The Power of AI & BCI Technology</h3>
-    <ul>
-      <li>🔹 Personalize Learning – Adapts to your child’s unique brain patterns.</li>
-      <li>🔹 Track Progress in Real-Time – AI monitors cognitive growth and adjusts activities.</li>
-      <li>🔹 Enhance Engagement – Interactive, fun, and effective brain-training exercises.</li>
-    </ul>
+   <div class="container">
+    <img src="kids_learning.jpg" alt="Description of image">
+    <div class="text">
+      <h2>Golden Age of Brain Learning !</h2>
+      <p> Scientific study shows that 1 to 6 years old are the golden period for kids learning and brain rapid development !!! </p>
+      <p> Systematic and effective training provided during this period boost up the kids development from all aspects. </p>
+    </div>
+   </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
     <p><strong>Start Your Child’s Journey Today!</strong><br>
     Give your little one the best foundation for a bright future. Explore our programs and see how whole-brain development powered by AI and BCI can make a difference!</p>
-  </section>
+   
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+   </div>
+  </div>
+
+<!--  ---------------------------------------------------------------------------------------------------------------  -->
+
+   <div class="section2">
+     <div class="content">
+
+     <div class="container">
+       <div class="text">
+         <h3>The Power of AI & BCI Technology </h3>
+       </div> 
+       <img src="Brain_Light.jpg" alt="Description of image">
+     </div>
+
+     <ul>
+      <li>🔹 Personalize Learning – Adapts to your child’s unique brain patterns.</li>
+      <li>🔹 Track Progress in Real-Time – AI monitors cognitive growth and adjusts activities.</li>
+      <li>🔹 Enhance Engagement – Interactive, fun, and effective brain-training exercises.</li>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+     </ul>
+
+    </div>
+  </div>
+
+
+<!--  ---------------------------------------------------------------------------------------------------------------  -->
+
   <footer>
     <p>&copy; 2025 ApexMinds Education Centre. All rights reserved.</p>
     <p>Contact no : 94228080 </p>
     <p>Address    : Hougang avenue 12, 541900 Singapore </p>
   </footer>
-</body>
+
+
+ </body>
 </html>

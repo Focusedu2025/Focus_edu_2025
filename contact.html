@@ -15,18 +15,18 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: #e0f2e9;
+      background: #0D2231;
       padding: 20px;
     }
     header h1 {
       margin: 0;
-      font-size: 2em;
-      color: darkgreen;
+      font-size: 1.5em;
+      color: Lightgreen;
     }
     nav a {
       margin: 0 10px;
       text-decoration: none;
-      color: #2e8b57;
+      color: yellow;
       font-weight: 600;
     }
     section {
@@ -35,8 +35,17 @@
       margin: auto;
     }
     h2 {
-      color: #2e8b57;
+      margin: 0;
+      padding: 0;
+      color: black;
+      font-size: 2.0em;
     }
+
+    h3 {
+      color: #2e8b57;
+      font-size: 1.0em;
+    }
+
     form {
       display: flex;
       flex-direction: column;
@@ -57,28 +66,74 @@
       border-radius: 8px;
       cursor: pointer;
     }
-  </style>
+
+   .logo-img {
+      display: flex;
+      width: 80px;
+     height: auto;
+    }
+
+   .logo-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+</style>
+
+
+
 </head>
 <body>
   <header>
+
+  <div class="logo-title">
+    <img src="logo.png" alt="logo" class="logo-img">
     <h1>ApexMinds Education Center</h1>
+  </div>
+
     <nav>
-      <a href="home.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-      <a href="gallery.html">Gallery</a>
+     <a href="index.html">Home</a>
+     <a href="about.html">About Us</a>
+     <a href="program.html">Our Programmes</a>
+     <a href="testimonial.html">Our Testimonials</a>
+     <a href="contact.html">Contact Us</a>
+     <a href="gallery.html">Gallery</a>
+     <a href="faq.html">FAQs</a>
     </nav>
   </header>
 
   <section>
     <h2>Contact Us</h2>
-    <form>
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="5" placeholder="Your Enquiry" required></textarea>
-      <button type="submit">Send Enquiry</button>
-    </form>
+    
+   <br>
+   <br>   
+    
+   <div class="logo-title">
+    <img src="whatsapp.png" alt="Whatsapp" class="logo-img">
+     <div class="text">
+       <h3> +65-98081688 </h3>
+     </div>
+   </div>
+
+  <br>
+
+   <div class="logo-title">
+    <img src="facebook2.png" alt="Facebook" class="logo-img">
+     <div class="text">
+       <h3> link to facebook ==> ApexMinds Education </h3>
+     </div>
+   </div>
+
+  <br>
+
+   <div class="logo-title">
+    <img src="xiaohongshu.png" alt="xiao hong shu" class="logo-img">
+     <div class="text">
+       <h3> link to 小红书 ==> ApexMinds Education</h3>
+     </div>
+   </div>
+
   </section>
 </body>
 </html>
