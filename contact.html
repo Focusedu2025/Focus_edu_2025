@@ -7,6 +7,7 @@
   <style>
     body {
       margin: 0;
+      padding: 0;
       font-family: 'Quicksand', sans-serif;
       background: #f8fff8;
       color: #333;
@@ -31,7 +32,6 @@
     }
     section {
       padding: 40px 20px;
-      max-width: 600px;
       margin: auto;
     }
     h2 {
@@ -79,6 +79,39 @@
       gap: 10px;
     }
 
+.contact-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.contact-box {
+  background: #ffffff;
+  border: 2px solid #2e8b57;
+  border-radius: 12px;
+  padding: 20px;
+  width: 460px;
+  box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-box h2 {
+  text-align: center;
+}
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.text h3, .text a {
+  margin: 0;
+  font-size: 1em;
+  color: #333;
+}
+
 </style>
 
 
@@ -89,7 +122,7 @@
 
   <div class="logo-title">
     <img src="logo.png" alt="logo" class="logo-img">
-    <h1>ApexMinds Education Center</h1>
+    <h1>ApexMinds Growth Hub</h1>
   </div>
 
     <nav>
@@ -103,37 +136,54 @@
     </nav>
   </header>
 
-  <section>
-    <h2>Contact Us</h2>
-    
-   <br>
-   <br>   
-    
-   <div class="logo-title">
-    <img src="whatsapp.png" alt="Whatsapp" class="logo-img">
-     <div class="text">
-       <h3> +65-98081688 </h3>
-     </div>
-   </div>
 
-  <br>
+<section>
+  <div class="contact-container">
 
-   <div class="logo-title">
-    <img src="facebook2.png" alt="Facebook" class="logo-img">
-     <div class="text">
-       <h3> link to facebook ==> ApexMinds Education </h3>
-     </div>
-   </div>
+    <!-- Left Box (You can customize the content) -->
+    <div class="contact-box">
+      <h2>Visit Us</h2>
+      <p>ApexMinds Growth Hub</p>
+      <p>1 Marine Parade Central, #07-08 Parkway Centre, Singapore 449408</p>
+      <p>Email: adm.apexminds.edu@gmail.com</p>
+    </div>
 
-  <br>
+    <!-- Right Box (Contact Info) -->
+    <div class="contact-box">
+      <h2>Contact Us</h2>
 
-   <div class="logo-title">
-    <img src="xiaohongshu.png" alt="xiao hong shu" class="logo-img">
-     <div class="text">
-       <h3> link to 小红书 ==> ApexMinds Education</h3>
-     </div>
-   </div>
+      <div class="logo-title">
+        <img src="whatsapp.png" alt="Whatsapp" class="logo-img">
+        <div class="text">
+          <h3>WhatsApp us at: +65-89136838</h3>
+        </div>
+      </div>
 
-  </section>
+      <div class="logo-title">
+        <img src="instagram.jpg" alt="Instagram ApexMinds" class="logo-img">
+        <div class="text">
+          <a href="https://www.instagram.com/apexminds_growth_hub/" target="_blank">Visit ApexMinds</a>
+        </div>
+      </div>
+
+      <div class="logo-title">
+        <img src="facebook.jpg" alt="Facebook ApexMinds" class="logo-img">
+        <div class="text">
+          <a href="https://www.facebook.com/profile.php?id=61577719357469" target="_blank">Visit ApexMinds</a>
+        </div>
+      </div>
+
+      <div class="logo-title">
+        <img src="xiaohongshu.png" alt="xiao hong shu ApexMinds" class="logo-img">
+        <div class="text">
+          <a href="https://www.facebook.com/ng.kimha" target="_blank">Visit ApexMinds</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
 </body>
 </html>
