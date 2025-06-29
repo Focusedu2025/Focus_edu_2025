@@ -11,6 +11,7 @@
       background: #f8fff8;
       color: #333;
     }
+
     header {
       display: flex;
       justify-content: space-between;
@@ -18,37 +19,77 @@
       background: #0D2231;
       padding: 20px;
     }
+
     header h1 {
       margin: 0;
       font-size: 1.5em;
       color: lightgreen;
     }
+
     nav a {
       margin: 0 10px;
       text-decoration: none;
       color: yellow;
       font-weight: 600;
     }
+
     section {
       padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
     }
+
     h2 {
       color: #2e8b57;
     }
-    .gallery {
+
+     .tabs {
       display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
+      border-bottom: 2px solid #ccc;
+      margin-bottom: 10px;
     }
-    .gallery img {
-      width: 200px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 10px;
+
+    .tab-button {
+      padding: 10px 20px;
+      border: none;
+      background: lightgrey;
+      cursor: pointer;
+      margin-right: 5px;
+      border-radius: 5px 5px 0 0;
     }
+
+    .tab-button.active {
+      background: lightgreen;
+      border-bottom: 2px solid white;
+      font-weight: bold;
+    }
+
+    .tab-content {
+      display: none;
+      padding: 15px;
+      border: 1px solid #ccc;
+      background: #fff;
+      border-radius: 0 0 10px 10px;
+    }
+
+   .tab-content.active {
+      display: block;
+    }
+
+   .gallery {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+     gap: 10px;
+     justify-items: center;
+   }
+
+   .gallery img {
+     width: 300px;
+     height: 200px;
+     object-fit: cover;
+     border-radius: 10px;
+     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+   }
 
    .logo-img {
       display: flex;
@@ -63,6 +104,7 @@
     }
 
 </style>
+
 
 <!--  ---------------------------------------------------------------------------------------------------------------  -->
 
@@ -86,14 +128,75 @@
     </nav>
   </header>
 
-  <section>
-    <h2>Gallery</h2>
-    <div class="gallery">
-      <img src="https://via.placeholder.com/200x150" alt="Gallery Image 1">
-      <img src="https://via.placeholder.com/200x150" alt="Gallery Image 2">
-      <img src="https://via.placeholder.com/200x150" alt="Gallery Image 3">
-      <img src="https://via.placeholder.com/200x150" alt="Gallery Image 4">
-    </div>
-  </section>
+
+<!--  ---------------------------------------------------------------------------------------------------------------  -->
+
+<br>
+
+<div class="tabs">
+  <button class="tab-button active" onclick="openTab('tab1')">Whole-Brain</button>
+  <button class="tab-button" onclick="openTab('tab2')">BrainCo Focus</button>
+  <button class="tab-button" onclick="openTab('tab3')">Pre-School</button>
+  <button class="tab-button" onclick="openTab('tab4')">Workshop</button>
+</div>
+
+<!--  ---------------------------------------------------------------------------------------------------------------  -->
+
+<div id="tab1" class="tab-content active">
+  <div class="gallery">
+    <img src="https://via.placeholder.com/150?text=3A" alt="">
+  </div>
+</div>
+
+<!--  ---------------------------------------------------------------------------------------------------------------  -->
+
+<div id="tab2" class="tab-content">
+  <div class="gallery">
+    <img src="https://via.placeholder.com/150?text=3A" alt="">
+    <img src="https://via.placeholder.com/150?text=3A" alt="">
+    <img src="https://via.placeholder.com/150?text=3A" alt="">
+  </div>
+</div>
+
+<!--  ---------------------------------------------------------------------------------------------------------------  -->
+
+<div id="tab3" class="tab-content">
+  <div class="gallery">
+    <img src="幼小衔接1.jpg" alt="">
+    <img src="幼小衔接2.jpg" alt="">
+    <img src="幼小衔接3.jpg" alt="">
+    <img src="幼小衔接4.jpg" alt="">
+    <img src="幼小衔接5.jpg" alt="">
+    <img src="幼小衔接6.jpg" alt="">
+  </div>
+</div>
+
+<!--  ---------------------------------------------------------------------------------------------------------------  -->
+
+<div id="tab4" class="tab-content">
+  <div class="gallery">
+    <img src="workshop1.jpg" alt="">
+    <img src="workshop2.jpg" alt="">
+    <img src="workshop3.jpg" alt="">
+  </div>
+</div>
+
+<!--  ---------------------------------------------------------------------------------------------------------------  -->
+
+
+<script>
+  function openTab(tabId) {
+    const buttons = document.querySelectorAll('.tab-button');
+    const contents = document.querySelectorAll('.tab-content');
+
+    buttons.forEach(btn => btn.classList.remove('active'));
+    contents.forEach(content => content.classList.remove('active'));
+
+    document.querySelector(`#${tabId}`).classList.add('active');
+    event.currentTarget.classList.add('active');
+  }
+</script>
+
+
 </body>
 </html>
